@@ -11,7 +11,7 @@
             >
                 <a v-html="tab.header"
                    :aria-controls="tab.hash"
-                   :aria-selected="tab.isActive"
+                   :aria-selected="tab.isActive ? 'true': 'false'"
                    @click="selectTab(tab.hash, $event)"
                    :href="tab.hash"
                    class="tabs-component-tab-a"
